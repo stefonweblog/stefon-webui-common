@@ -1,6 +1,23 @@
-(ns stefon-webui-common.core)
+(ns stefon-webui-common.core
+  (:require jig)
+  (:import (jig Lifecycle)))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+
+;; A Jig Component
+(deftype Component [config]
+  Lifecycle
+
+  (init [_ system]
+
+    ;;(println ">> init CALLED > " system)
+    system)
+
+  (start [_ system]
+
+    ;;(println ">> start CALLED > " system)
+    system)
+
+  (stop [_ system]
+
+    ;;(println ">> stop CALLED > " system)
+    system))
