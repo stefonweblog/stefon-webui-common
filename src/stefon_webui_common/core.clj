@@ -21,3 +21,9 @@
 
     ;;(println ">> stop CALLED > " system)
     system))
+
+
+(defn handle-hello-world [Request]
+  {:status 200
+   :headers {"Content-Type" "text/html"}
+   :body "<h1>Hello World!</h1>"})
