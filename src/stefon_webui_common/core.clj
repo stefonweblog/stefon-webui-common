@@ -23,7 +23,7 @@
     system))
 
 
-(defn handle-hello-world [Request]
+(defn handle-hello-world [request]
   {:status 200
    :headers {"Content-Type" "text/html"}
    :body "<h1>Hello World!</h1>"})
