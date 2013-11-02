@@ -9,17 +9,17 @@
 
   (init [_ system]
 
-    ;;(println ">> init CALLED > " system)
+    (println ">> init CALLED > " (keys system))
     system)
 
   (start [_ system]
 
-    ;;(println ">> start CALLED > " system)
+    (println ">> start CALLED > " (keys system))
     system)
 
   (stop [_ system]
 
-    ;;(println ">> stop CALLED > " system)
+    (println ">> stop CALLED > " (keys system))
     system))
 
 
