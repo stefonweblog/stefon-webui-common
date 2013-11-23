@@ -1,10 +1,11 @@
 (ns stefon-webui-common.core
-  (:require jig)
-  (:import (jig Lifecycle)))
+
+  #_(:require jig)
+  #_(:import (jig Lifecycle)))
 
 
 ;; A Jig Component
-(deftype Component [config]
+#_(deftype Component [config]
   Lifecycle
 
   (init [_ system]
